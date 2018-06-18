@@ -1,5 +1,6 @@
 # Spine-label-demo
 A demo for labeling the transverse processes and spinous processes of the spine.
+![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/vertebral-spinous-process.gif)
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
 
@@ -33,4 +34,4 @@ https://biomedia.doc.ic.ac.uk/data/spine/#Download
         if( exist('tp') && exist('sp')) %%%%%%%%%%%%%%%<= setting the Break point here for labeling
             save([fileFolder,'label.mat'],'tp','sp'); % save the labels of transverse processes as tp, spinous processes as sp 
         end
- ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/vertebral-spinous-process.gif)
+ 
