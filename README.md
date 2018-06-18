@@ -1,5 +1,5 @@
 # spine-label-demo
-
+![](https://en.wikipedia.org/wiki/Vertebra#/media/File:Vertebra_Superior_View-en.svg)
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
 
@@ -33,4 +33,4 @@ https://biomedia.doc.ic.ac.uk/data/spine/#Download
         if( exist('tp') && exist('sp')) %%%%%%%%%%%%%%%<= setting the Break point here for labeling
             save([fileFolder,'label.mat'],'tp','sp'); % save the labels of transverse processes as tp, spinous processes as sp 
         end
- ![](https://en.wikipedia.org/wiki/Vertebra#/media/File:Vertebra_Superior_View-en.svg)
+ 
