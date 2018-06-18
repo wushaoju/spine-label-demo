@@ -28,3 +28,8 @@ https://biomedia.doc.ic.ac.uk/data/spine/#Download
               
         figure,
         [h1,h2] =  visibleCube(V,info,thresh,[2 2 1]);   % use [2 2 1] or [1 1 1] for finer resolution
+        
+ ## step 4: labeled the transverse processes, spinous processes(middle part) of the spine:
+        if( exist('tp') && exist('sp')) %%%%%%%%%%%%%%%<= setting the Break point here for labeling
+            save([fileFolder,'label.mat'],'tp','sp'); % save the labels of transverse processes as tp, spinous processes as sp 
+        end
