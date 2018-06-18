@@ -16,3 +16,15 @@ https://biomedia.doc.ic.ac.uk/data/spine/#Download
         V = nii_read_volume(info);
         info.PixelSpacing=info.PixelDimensions(1:2);
         info.SpacingBetweenSlices=info.PixelDimensions(3);
+        
+## step 3: segment and visualize the image:       
+        dirThresh = dir(fullfile([path,nameFolds{j}],'thresh.mat'));
+        if(~isempty(dirThresh))
+            load([fileFolder,'thresh.mat']); %loading threshold
+        end
+        
+        thresh = 200 ;%(vary from case to case...)
+        save([fileFolder,'thresh.mat'],'thresh'); %Saving threshold
+              
+        figure,
+        [h1,h2] =  visibleCube(V,info,thresh,[2 2 1]);   % use [2 2 1] or [1 1 1] for finer resolution
