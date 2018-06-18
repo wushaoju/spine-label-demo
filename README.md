@@ -1,4 +1,4 @@
-# spine-label-demo
+# Spine-label-demo
 A demo for labeling the transverse processes and spinous processes of the spine.
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
