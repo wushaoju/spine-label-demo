@@ -1,6 +1,5 @@
 # spine-label-demo
-![image](https://en.wikipedia.org/wiki/Vertebra#/media/File:Vertebra_Superior_View-en.svg)
-
+A demo for labeling the transverse processes and spinous processes of the spine.
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
 
