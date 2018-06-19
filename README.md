@@ -4,7 +4,7 @@ A demo for labeling the transverse processes and spinous processes of the spine.
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
 ## Software:
-Matlab 2017
+Matlab 2017 or above
 ## Spine-anatomy-video link:
 https://www.spine-health.com/video/lumbar-spine-anatomy-video
 
