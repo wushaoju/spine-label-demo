@@ -44,4 +44,3 @@ https://www.spine-health.com/video/lumbar-spine-anatomy-video
  Spinous processes(red),transverse processes(blue)
  ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/example1.jpg)
  ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/example2.jpg)
- ## Author: Shaoju Wu
