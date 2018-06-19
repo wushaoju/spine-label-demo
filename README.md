@@ -37,6 +37,8 @@ https://www.spine-health.com/video/lumbar-spine-anatomy-video
         if( exist('tp') && exist('sp')) %%%%%%%%%%%%%%%<= setting the Break point here for labeling
             save([fileFolder,'label.mat'],'tp','sp'); % save the labels of transverse processes as tp, spinous processes as sp 
         end
+ ## How to use data cursor to label spine data:
+ ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/how_to_label.gif)
  ## Examples:
  Spinous processes(red),transverse processes(blue)
  ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/example1.jpg)
