@@ -2,7 +2,8 @@
 A demo for labeling the transverse processes and spinous processes of the spine.
 ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/vertebral-spinous-process.gif)
 ## Download dataset:
-https://biomedia.doc.ic.ac.uk/data/spine/#Download
+https://biomedia.doc.ic.ac.uk/data/spine/#Download 
+The data has been provided by the Department of Radiology at University of Washington.
 ## Software:
 Matlab 2017 or above
 ## Spine-anatomy-video link:
@@ -44,3 +45,4 @@ https://www.spine-health.com/video/lumbar-spine-anatomy-video
  Spinous processes(red),transverse processes(blue)
  ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/example1.jpg)
  ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/example2.jpg)
+ ## Author: Shaoju Wu
