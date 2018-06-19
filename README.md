@@ -4,6 +4,9 @@ A demo for labeling the transverse processes and spinous processes of the spine.
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download
 
+## Spine-anatomy-video link:
+https://www.spine-health.com/video/lumbar-spine-anatomy-video
+
 ## step 1: unzip the nii.gz file:
         dirUnzip = dir(fullfile([path,nameFolds{j}],'*.nii.gz'));
         dirOutput = dir(fullfile([path,nameFolds{j}],'*.nii'));
