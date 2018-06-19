@@ -1,7 +1,8 @@
 # Spine-label-demo
 A demo for labeling the transverse processes and spinous processes of the spine.
 ![](https://github.com/wushaoju/spine-label-demo/blob/master/Image/vertebral-spinous-process.gif)
-## Author: Shaoju Wu
+## Author: 
+Shaoju Wu
 ## Download dataset:
 https://biomedia.doc.ic.ac.uk/data/spine/#Download 
 ## Software:
