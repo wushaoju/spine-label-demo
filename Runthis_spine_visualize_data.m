@@ -10,7 +10,7 @@ nameMainFolds = {dirFolder(isub).name}';
 nameMainFolds(ismember(nameMainFolds,{'.','..'})) = []; % Obtain the name of the folder 
 num = length(nameMainFolds);
 %%
-for i = 1:num
+for i = 16:num
     % obtain the folder name and subfolder name
     path = [mainFolder,nameMainFolds{i}];
     path = [path,'/'];
@@ -47,7 +47,7 @@ for i = 1:num
             load([fileFolder,'thresh.mat']); %loading threshold
         end
         
-        thresh = 200 ;%(vary from case to case...)
+        thresh = 150 ;%(vary from case to case...)
         save([fileFolder,'thresh.mat'],'thresh'); %Saving threshold
               
         figure,
@@ -105,10 +105,10 @@ for i = 1:num
                 end
                 
             end
-        end
-        % save the fig to current folder
-        if(isempty(dirLabel))
+            % save the fig to current folder
+
            savefig([fileFolder,nameMainFolds{i},'_',nameFolds{j},'_.fig']);
         end
+
     end %%%%%%%%%%%%%%%<= setting the Break point here for visualizing the labels
 end
