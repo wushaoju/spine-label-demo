@@ -1,8 +1,9 @@
 %% labeled the transverse processes, spinous processes of the spine
 % Author: Shaoju Wu Date: 2018 06 07
+% update 2018 06 25 
 % Dataset: https://biomedia.doc.ic.ac.uk/data/spine/#Download
 %% Identify the number of patiences for labeling
-mainFolder = ['spine-1/spine-1/'];% path of the dataset
+mainFolder = ['spine-1/'];% path of the dataset
 dirFolder = dir(mainFolder);
 isub = [dirFolder(:).isdir]; %# returns logical vector
 nameMainFolds = {dirFolder(isub).name}';
@@ -54,7 +55,7 @@ for i = 1:num
         hold on;
         vertex = h1.Vertices;
         camlight;
-        
+
 %% loading previous labels for visualization if available
         dirLabel = dir(fullfile([path,nameFolds{j}],'label.mat'));
         if(~isempty(dirLabel))
@@ -73,18 +74,23 @@ for i = 1:num
         else
             fprintf('No label for Case %s\n',nameFolds{j});
         end
+         clear tp;
+         clear sp;
 
 %% step 4: labeled the transverse processes, spinal processes(middle part) of the spine
+% name of the file. For example, if you labeling the 'patient0001' in a sub folder name '2804506', then the name of the label file should be 'patient0001_2804506_label.mat'.
+        saveName = [nameMainFolds{i},'_',nameFolds{j},'_label.mat'];
         if( exist('tp') && exist('sp')) %%%%%%%%%%%%%%%<= setting the Break point here for labeling
-            save([fileFolder,'label.mat'],'tp','sp');
+            
+            save([fileFolder,saveName],'tp','sp');
         end
         
 
 %% visualize the labels 
         % Loading the labels
-        dirLabel = dir(fullfile([path,nameFolds{j}],'label.mat'));
+        dirLabel = dir(fullfile([path,nameFolds{j}],saveName));
         if(~isempty(dirLabel))
-            SPosition = load([fileFolder,'label.mat']);
+            SPosition = load([fileFolder,saveName]);
             PosName = fieldnames(SPosition);
             
             for k =1:length(PosName)
@@ -100,7 +106,9 @@ for i = 1:num
                 
             end
         end
-       
+        % save the fig to current folder
+        if(isempty(dirLabel))
+           savefig([fileFolder,nameMainFolds{i},'_',nameFolds{j},'_.fig']);
+        end
     end %%%%%%%%%%%%%%%<= setting the Break point here for visualizing the labels
-    
 end
