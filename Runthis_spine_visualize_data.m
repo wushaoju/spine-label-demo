@@ -3,14 +3,14 @@
 % update 2018 06 25 
 % Dataset: https://biomedia.doc.ic.ac.uk/data/spine/#Download
 %% Identify the number of patiences for labeling
-mainFolder = ['spine-1/'];% path of the dataset
+mainFolder = ['spine-1/spine-1/'];% path of the dataset
 dirFolder = dir(mainFolder);
 isub = [dirFolder(:).isdir]; %# returns logical vector
 nameMainFolds = {dirFolder(isub).name}';
 nameMainFolds(ismember(nameMainFolds,{'.','..'})) = []; % Obtain the name of the folder 
 num = length(nameMainFolds);
 %%
-for i = 16:num
+for i = 1:num
     % obtain the folder name and subfolder name
     path = [mainFolder,nameMainFolds{i}];
     path = [path,'/'];
